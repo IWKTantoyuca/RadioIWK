@@ -12,14 +12,14 @@ new Vue({
         {
           name: 'Radio',
           artist: 'IWK',
-          cover: 'https://institutowilliams.edu.mx/imagenes/radio_wk.jpg',
+          cover: 'https://radio.institutowilliams.edu.mx/img/logo.jpg',
           source:
             'https://fps2.listen2myradio.com:2199/listen.php?ip=109.169.23.17&port=8194&type=s1',
           url: 'https://institutowilliams.edu.mx/',
           favorited: true,
         },
       ],
-      currentTrack: null,
+      currentTrack: 0,
       currentTrackIndex: 0,
       transitionName: null,
     };
@@ -31,6 +31,8 @@ new Vue({
         this.isTimerPlaying = true;
       } else {
         this.audio.pause();
+        this.audio = new Audio();
+        this.audio.src = this.currentTrack.source;
         this.isTimerPlaying = false;
       }
     },
