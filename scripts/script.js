@@ -15,7 +15,7 @@ new Vue({
           cover: 'https://radio.institutowilliams.edu.mx/img/logo.jpg',
           source:
             'https://fps2.listen2myradio.com:2199/listen.php?ip=109.169.23.17&port=8194&type=s1',
-          url: 'https://institutowilliams.edu.mx/',
+          url: 'https://chat.institutowilliams.edu.mx/',
           favorited: true,
         },
       ],
